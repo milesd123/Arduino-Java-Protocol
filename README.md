@@ -6,11 +6,11 @@ A Finite state machine protocol design using the jssc library to send bytes of d
 
 INFO TYPE:
 
-0x30: info string in UTF-8 format, maximum of 100 characters long
-0x31: error string in UTF-8 format, maximum of 100 characters long
-0x32: timestamp, 4-byte integer, milliseconds since reset
-0x33: potentiometer reading, 2-byte integer A/D counts
-0x34: raw (unconverted) ultrasonic sensor reading (i.e., time), 4-byte unsigned integer in μs.
+- 0x30: info string in UTF-8 format, maximum of 100 characters long
+- 0x31: error string in UTF-8 format, maximum of 100 characters long
+- 0x32: timestamp, 4-byte integer, milliseconds since reset
+- 0x33: potentiometer reading, 2-byte integer A/D counts
+- 0x34: raw (unconverted) ultrasonic sensor reading (i.e., time), 4-byte unsigned integer in μs.
 
 # General FSM Flow:
 
