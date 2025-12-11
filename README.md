@@ -2,10 +2,8 @@ A Finite state machine protocol design using the jssc library to send bytes of d
 
 # Protocol:
 
-0x21: Magic number, resembles the beginning of a message
-
-INFO TYPE:
-
+KEYS:
+- 0x21: MAGIC NUMBER, used to indicate the beginning of a structured message
 - 0x30: info string in UTF-8 format, maximum of 100 characters long
 - 0x31: error string in UTF-8 format, maximum of 100 characters long
 - 0x32: timestamp, 4-byte integer, milliseconds since reset
