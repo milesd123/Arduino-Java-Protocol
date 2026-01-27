@@ -1,19 +1,5 @@
 // Authors: Michael Hall and James Orr
-
-//0x30: !0<2 byte length int><100max chars>		str INFO 
-//0x31: !1<2 byte length int><100max chars>		str ERROR
-//0x32: !2<4 byte int unsigned><milliseconds>	 MILLIS	
-//0x33: !3<2 byte int unsigned><A/D Counts(0-1023)> POT
-//0x34: !4<4 byte int unsigned><microseconds> SENSOR
-//
-//case INFO: // look for 2 byte length in, then add next bytes to string, checking string length
-//case ERROR: // ^^
-//case POT: //  FROM ARD: 2 byte unsigned int -> java int 
-//case SENSOR: // FROM ARD: 4 byte unsigned long -> java long
-//case MILLIS: // look for 4 byte unsigned int -> java long
-
-//Convert sensor reading to distance
-//Strings can only be in UTF-8, no 00 or \0(NULL)
+// run() author: Miles Dripps
 package communication;
 
 import jssc.*;
